@@ -30,7 +30,7 @@ void fftResult(AudioFFTBase &fft) {
 
 void setup() {
   Serial.begin(9600);
-  AudioLogger::instance().begin(Serial, AudioLogger::Info);
+  AudioLogger::instance().begin(Serial, AudioLogger::Warning);
 
   auto cfgA2DP = btin.defaultConfig(RX_MODE);
   cfgA2DP.name = "Vocalise";

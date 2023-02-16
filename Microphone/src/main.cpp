@@ -14,7 +14,7 @@ StreamCopy btcopier(btout, in); // Microphone -> Bluetooth output
 
 void setup(void) {
   Serial.begin(9600);
-  AudioLogger::instance().begin(Serial, AudioLogger::Info);
+  AudioLogger::instance().begin(Serial, AudioLogger::Warning);
 
   // GP34 Default Output
   auto cfgRx = in.defaultConfig(RX_MODE);
